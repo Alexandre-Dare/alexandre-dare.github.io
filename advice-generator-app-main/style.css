@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+body {
+    background-color: hsl(218, 23%, 16%);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(217, 19%, 24%);
+    width: 29rem;
+    height: 20rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 25vh;
+    border-radius: 1rem;
+
+}
+
+#advice-number {
+    color: hsl(150, 100%, 66%);
+    font-size: small;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    margin-top:3rem;
+}
+
+#advice {
+    height: 7.2rem;
+    margin-top: 1.5rem;
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+#divider {
+    position: relative;
+    top: 2rem;
+}
+#divider-mobile {
+    display: none;
+    position: relative;
+    top: 2rem;
+}
+
+#advice-generator {
+    width: 4rem;
+    background-color: hsl(150, 100%, 66%);
+    position: relative;
+    top: 4.2rem;
+    border-radius: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#dice {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/*----------------------------------hover---------------*/
+
+#advice-generator:hover {
+    filter: drop-shadow(0 0 1rem hsl(150, 100%, 66%));
+}
+
+/*----------------------------------medi query--------------*/
+@media screen and (max-width: 545px){
+    
+    main {
+        width: 60%;
+        height: auto;
+        padding-bottom: 2.3rem;
+        margin-top: 3rem;
+        margin-bottom: 20vh;
+    }
+    #advice {
+        height: auto;
+    }
+    #divider {
+        display: none;
+    }
+
+    #divider-mobile {
+        display: block;
+    }
+}

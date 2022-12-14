@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+}
+/*-----------------------------------------------------------partie texte --------------------------------------------------------*/
+#img-for-mobile {
+    display: none;
+}
+#text-and-form {
+    width: 80rem;
+    height: 90vh;
+    padding-left: 10vw;
+    padding-top: 10vh;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: cover;
+}
+
+#brand {
+    height: 25vh;
+}
+
+main {
+    width: 28rem;
+}
+
+#coming-soon {
+    font-size: 60px;
+    font-weight: 400;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#pink-begin {
+    font-size: 65px;
+    font-weight: 300;
+    color: hsl(0, 93%, 68%);
+}
+
+#description {
+    color: hsl(0, 93%, 68%);
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#email-form {
+    margin-top: 0;
+    padding-top: 0;
+}
+#email {
+    height: 3rem;
+    width: 23rem;
+    border: 1px solid hsl(0, 6%, 24%);
+    border-radius: 5rem;
+    padding-left: 1rem;
+    vertical-align: bottom;
+}
+
+#submit-btn {
+    width: 6rem;
+    height: 51px;
+    margin-left: -4rem;
+    vertical-align: bottom;
+    border-radius: 5rem;
+    border: none;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+#submit-arrow {
+   position: relative;
+   right: 10%;
+}
+
+#error {
+    color: hsl(0, 93%, 68%);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    opacity: 0;
+}
+
+#error-logo {
+   position: relative;
+   right: 60%;
+   opacity: 0;
+   
+}
+
+/*---------------------------------------------------------------partie hero -------------------------------------------------*/
+
+#hero {
+    width: 40rem;
+    height: 100vh;
+}
+#hero img {
+    width: 40rem;
+    height: 57.95rem;
+    float: right;
+}
+/* --------------------------------------------------------------media query ------------------------------------------------------*/
+
+@media screen and (max-width: 1220px) {
+    * {
+    
+    }
+    html{
+        width: 100%;
+    }
+    body {
+        width: 100%;
+        
+    }
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    main * {
+    }
+    #text-and-form {
+        text-align: center;
+        justify-content: center;
+        width: 105%;
+        padding-left: 0%;
+        padding-top: 0%;
+        margin-right: 0%;
+
+    }
+    #brand {
+        height: 3rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+        text-align: start;
+        width: auto;
+
+    }
+    #hero {
+        display: none;
+    }
+    #img-for-mobile {
+        display: block;
+        margin-bottom: 4rem;
+        width: 100%;
+
+    }
+    #img-for-mobile img {
+        width: 100%;
+    }
+    #email-form {
+        height: 15vh;
+        width: 100%;
+    }
+    #email {
+        width: 80%;
+    }
+}
+
+/*---------------------------------------------------------------hover-------------------------------------------------------------*/
+#submit-btn:hover {
+   background: hsl(0, 50%, 86%); 
+}
